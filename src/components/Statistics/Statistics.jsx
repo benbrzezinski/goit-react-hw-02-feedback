@@ -4,7 +4,7 @@ import Notification from 'components/Notification/Notification';
 
 const Statistics = ({ good, neutral, bad, total, positivePercentage }) => (
   <>
-    <h3 className={css.statisticsTitle}>Statistics</h3>
+    <h2 className={css.statisticsTitle}>Statistics</h2>
     {total > 0 ? (
       <ul className={css.statistics}>
         <li className={css.statisticsItem}>Good: {good}</li>

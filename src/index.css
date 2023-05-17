@@ -20,6 +20,14 @@ body {
   background-color: var(--color-bg-main);
 }
 
+@media screen and (max-width: 389px) {
+  body {
+    display: grid;
+    justify-content: center;
+    padding-top: 50px;
+  }
+}
+
 ul,
 ol {
   list-style-type: none;

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import css from './Section.module.css';
 
-const Section = ({ title, children }) => (
+const Section = ({ title = 'Please leave feedback', children }) => (
   <section className={css.section}>
     <h1 className={css.title}>{title}</h1>
     {children}
@@ -9,7 +9,7 @@ const Section = ({ title, children }) => (
 );
 
 Section.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   children: PropTypes.node.isRequired,
 };
 
